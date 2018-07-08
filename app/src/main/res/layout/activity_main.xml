@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp">
+        <ImageView
+            android:id="@+id/imgFoto"
+            android:layout_alignParentTop="true"
+            android:background="@color/colorPrimaryDark"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/addphoto"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="18dp"/>
+        <ImageView
+            android:id="@+id/imgRechnung"
+            android:layout_alignParentTop="true"
+            android:background="@color/colorPrimaryDark"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/addphoto"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="28dp"
+            android:layout_marginTop="18dp"/>
+        <EditText
+            android:id="@+id/edtSache"
+            android:layout_below="@id/imgFoto"
+            android:layout_marginTop="35dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Sache"
+            android:layout_centerHorizontal="true"
+            android:ems="10"/>
+        <EditText
+            android:id="@+id/edtPreis"
+            android:layout_below="@+id/edtSache"
+            android:hint="Preis"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/edtDatum"
+            android:layout_below="@+id/edtPreis"
+            android:hint="Kaufdatum"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btnSpeichern"
+            android:layout_below="@+id/edtDatum"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:minWidth="160dp"
+            android:text="Speichern"
+            style="@style/Base.Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <Button
+            android:id="@+id/btnListe"
+            android:layout_below="@+id/btnSpeichern"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:minWidth="160dp"
+            android:text="Liste"
+            style="@style/Base.Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:id="@+id/txtFoto"
+            android:layout_below="@+id/imgFoto"
+            android:hint="Sache"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/imgFoto"
+            android:layout_marginLeft="43dp"/>
+        <TextView
+            android:id="@+id/txtRechnung"
+            android:layout_below="@+id/imgFoto"
+            android:hint="Rechnung"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/imgRechnung"
+            android:layout_marginRight="28dp"/>
+
+
+    </RelativeLayout>
+
+</ScrollView>
